@@ -2,7 +2,7 @@
 <%= render "form", product: @product %>
 <%= link_to "Cancel", products_path %>
 
-<%= form_with model: product do |form| %>
+<%= form_with model: @product do |form| %>
   <div>
     <%= form.label :name %>
     <%= form.text_field :name %>
